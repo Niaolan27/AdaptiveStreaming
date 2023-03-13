@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <title>jason's personal page</title>     
+    </head>
+    <body>
+        <div id = "intro">
+            <h1>welcome to me</h1>
+        </div>
+        <div>
+            <video id="videoPlayer" controls></video>
+        </div>
+        <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+        <script>
+            (function(){
+                var url = "./manifest2.mpd";
+                var player = dashjs.MediaPlayer().create();
+                player.initialize(document.querySelector("#videoPlayer"), url, true);
+                videoPlayer.play();
+            })();
+        </script>
+    </body>
+</html>
